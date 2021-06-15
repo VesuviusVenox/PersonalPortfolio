@@ -7,25 +7,26 @@
   <meta charset = "UTF-8">
   <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
 
+  <link rel="stylesheet" href="css/style.css"/>
+
   <title>Yoan Nikolov - Web Developer & UI designer</title>
 
  </head>
 
  <body>
 
-    <header>      
+    <header> 
     
         <nav>
-
-            <a href = "index.html" class = "current">Home</a>
-            <a href = "websites.html">Websites</a>
-            <a href = "ui.html">UI Designs</a>
-            <a href = "contact.html">Contact</a>
+            <a href = "index.html" class = "home">Home</a>
+            <a href = "websites.html" class = "sites">Websites</a>
+            <a href = "projects.html" class = "projects">Personal Projects</a>
+            <a href = "contact.html" class = "contact">Contact</a>
         </nav>
 
     </header>  
 
-    <section> 
+    <section class = "bio"> 
 
         <h2 hidden>Bio</h2>
 
@@ -51,29 +52,25 @@
 
     </section>
 
-    <hr>
+    <section class = "bio"> 
 
-    <section>
+        <h2 hidden>Video</h2>
 
-        <figure>
-            <a href = "websites.html" target="_blank"><img src="images/web1.png" alt="Website1"></a>
-            <figcaption>Website for a group project game.</figcaption>
-        </figure>
-       
-        <figure>
-            <a href = "websites.html" target="_blank"><img src="images/web2.png" alt="Website2"></a>
-            <figcaption>Website for a group project game.</figcaption>
-        </figure>
-        
-        <figure>
-            <a href = "websites.html" target="_blank"><img src="images/web3.png" alt="Website3"></a>
-            <figcaption>Website designed in my spare time.</figcaption>
-        </figure>
-       
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4IxbhHb_ijw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <aside>
+
+            <h2>Crowscape</h2>
+
+            <p>One of several group projects from university, a point and click adventure game.</p>
+            <p>My main role in the group was programming some of the puzzles within Processing, a Java-based, open-source programming language.</p>
+            <p>None of the art or music is produced by me.</p>
+            
+        </aside>
 
     </section>
 
-    <footer>Copyright Yoan Nikolov, 2021. All rights reserved. Contact: vesuviusvenox@gmail.com</footer>
+    <footer class = "main">Copyright Yoan Nikolov, 2021. All rights reserved. Contact: vesuviusvenox@gmail.com</footer>
     
  </body>
  
