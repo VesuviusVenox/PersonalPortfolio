@@ -22,12 +22,14 @@ h1, h2 {
 header {
     position: sticky;
     top: 0;
-    background-color: #b9beb6;
+    background-color: #90948e;
+    z-index: 1;
 }
 
 header nav { 
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 nav a {
@@ -66,9 +68,19 @@ nav a.contact:after {
     background-color:rgb(45, 72, 230);
 }
 
+nav a.saxion:after {
+    background-color: rgb(0, 156, 129);
+}
+
 nav a:hover:after {
     top: 0;
     height: 100%;
+}
+
+section.other {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin: 0 auto;
 }
 
 section.bio {
@@ -136,6 +148,7 @@ section.accordion {
     padding-top: 4rem;
     width: 30%;
     padding-left: 150px;
+    z-index: 0;
 }
 
 details[open] summary ~ * {
@@ -163,6 +176,7 @@ details[open] summary ~ * {
     font-size: 25px;
     font-weight: 300;
     list-style: none;
+    padding-left: 10px;
   }
   
   details summary:after {
@@ -179,7 +193,7 @@ details[open] summary ~ * {
   }
 
   details[open] summary:after {
-    transform: rotate(45deg);
+    transform: rotate(135deg);
     font-size: 2rem;
   }
 
@@ -188,9 +202,10 @@ details[open] summary ~ * {
   }
 
   details li {
-    font-size: 25px;
+    font-size: 20px;
     margin: 0 0 1rem;
     padding-top: 1rem;
+    z-index: -1;
   }
 
 footer.main {
@@ -209,8 +224,9 @@ footer.special {
 div.contact {
    display: flex;
    flex-direction: column;
-   margin-left: 650px;
-   margin-top: 30px;
+   position: absolute;
+   left: 650px;
+   top: 300px;
 }
 
 div.links {
@@ -218,6 +234,7 @@ div.links {
     flex-direction: row;
     padding-top: 20px;
     padding-left: 100px;
+    width: 100%;
 }
 
 div.links img:hover{
@@ -281,6 +298,7 @@ h1 {
     text-align: left;  
     font-weight: 100;  
     max-width: 30%; 
+    z-index: -2;
   }
 
   .event p {
@@ -317,30 +335,35 @@ h1 {
     position: relative;
     right: 130px;
     bottom: 40px;
+    z-index: -1;
   }
 
   .event p.date2 {
     position: relative;
     right: 130px;
     bottom: 108px;
+    z-index: -1;
   }
 
   .event p.date3 {
     position: relative;
     right: 130px;
     bottom: 85px;
+    z-index: -1;
   }
 
   .event p.date4 {
     position: relative;
     right: 130px;
     bottom: 155px;
+    z-index: -1;
   }
 
   .event p.date5 {
     position: relative;
     right: 190px;
     bottom: 130px;
+    z-index: -1;
   }
 
   .event:before{
@@ -354,4 +377,26 @@ h1 {
     position: relative;
     right: 57px;
     top: 27px;
+    z-index: -1;
+  }
+
+  div.others {
+    margin: 0 auto;
+    width: 1200px;
+    text-align: center;
+  }
+
+  div.others h2 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  div.others p {
+    font-size: 18px;
+  }
+
+  h2.big {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 40px;
   }
